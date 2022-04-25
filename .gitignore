@@ -207,3 +207,5 @@ cython_debug/
 
 HostDirectory.zocini
 .idea
+
+Profiles.json
