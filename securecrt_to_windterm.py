@@ -7,9 +7,6 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 
 
-
-
-
 def get_sessions_child_nodes_elements():
     child_nodes_elements = []
     doc = minidom.parse('crt.xml')
@@ -82,6 +79,7 @@ def recursion_get_full_paths_folder(parent_name, folders_tmp_dict, full_paths_fo
         full_paths_folder.insert(0, name)
         recursion_get_full_paths_folder(parent_name, folders_tmp_dict, full_paths_folder)
 
+
 def print_windterm_json():
     child_nodes_elements = get_sessions_child_nodes_elements()
 
@@ -109,6 +107,7 @@ def print_windterm_json():
         # print(json.dumps(tree_dict))
         break
     print(json.dumps(hosts))
+
 
 if __name__ == "__main__":
     print_windterm_json()
