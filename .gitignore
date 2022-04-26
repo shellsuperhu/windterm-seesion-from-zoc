@@ -209,3 +209,5 @@ HostDirectory.zocini
 .idea
 
 Profiles.json
+
+crt.xml
